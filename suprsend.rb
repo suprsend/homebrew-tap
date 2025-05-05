@@ -5,11 +5,11 @@
 class Suprsend < Formula
   desc ""
   homepage "https://github.com/suprsend/homebrew-tap"
-  version "0.0.3"
+  version "0.1"
 
   on_macos do
-    url "https://github.com/suprsend/cli/releases/download/v0.0.3/suprsend_Darwin_all.tar.gz"
-    sha256 "4f9a1c2c7af7542b8930c94a54f91c3e62a8b015429df6d8e1899c9ca7045bcd"
+    url "https://github.com/suprsend/cli/releases/download/0.1/suprsend_Darwin_all.tar.gz"
+    sha256 "295b612689daa7e210d9244c7de807073a38a4a3248631758a28e3064051d3fa"
 
     def install
       bin.install "suprsend"
@@ -18,15 +18,15 @@ class Suprsend < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/suprsend/cli/releases/download/v0.0.3/suprsend_Linux_x86_64.tar.gz"
-      sha256 "6181ac1e8c5b2e55ee021f42b135005cb6e888cc7babc671954285efa3adfa65"
+      url "https://github.com/suprsend/cli/releases/download/0.1/suprsend_Linux_x86_64.tar.gz"
+      sha256 "7d65cc79e8d46dade2a1dd34a92822b6b418563342e020ed6bf0ebe0f0594370"
       def install
         bin.install "suprsend"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/suprsend/cli/releases/download/v0.0.3/suprsend_Linux_arm64.tar.gz"
-      sha256 "fa5c01af2b0fd32b4efbc4286ab078b6c9f55bb47f9346cbd40f41e78c73ead2"
+      url "https://github.com/suprsend/cli/releases/download/0.1/suprsend_Linux_arm64.tar.gz"
+      sha256 "b52d64708561ca46f7bd2d33ace9fb59335419ddb3d5214742539a7037cda949"
       def install
         bin.install "suprsend"
       end

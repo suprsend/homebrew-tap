@@ -14,25 +14,25 @@ cask "suprsend" do
   on_macos do
     url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Darwin_all.tar.gz",
         verified: "github.com/suprsend/cli"
-    sha256 "bf8199fd212ccc39d7e810e9000b0a0ba85e431bdf96084722cb5e82941a4839"
+    sha256 "08e8836eb5b2aa4e6f72bb407107ceefc4db0f7627e7b71c7c4c3b89e39695d6"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Linux_x86_64.tar.gz",
         verified: "github.com/suprsend/cli"
-      sha256 "2503b296182252225083b5806aca3111cc9db019f16dd5ba84450b779a88ed33"
+      sha256 "119246b113f01318c494570cb1aad24822cecf40c428cd2a638bc5f41d373e96"
     end
     on_arm do
       url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Linux_arm64.tar.gz",
         verified: "github.com/suprsend/cli"
-      sha256 "9a246ab0105573471eef8d814827ac25b33ed73f1d115408621def42897edd66"
+      sha256 "2cf99f43277fe90c5d26669e1ec053df5ca12d2322e94a208ae9e126eb9da356"
     end
   end
 
   postflight do
     if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/foo"]
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/suprsend"]
     end
   end
 

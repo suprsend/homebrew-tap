@@ -6,7 +6,7 @@ class Suprsend < Formula
   desc ""
   homepage "https://github.com/suprsend/homebrew-tap"
   version "0.2.1"
-  disable! date: "2025-10-08", because: "has migrated to cask and the cask should be used now instead", replacement_cask: "foo"
+  disable! date: "2025-10-08", because: "has migrated to cask and the cask should be used now instead", replacement_cask: "suprsend"
 
   on_macos do
     url "https://github.com/suprsend/cli/releases/download/0.2/suprsend_Darwin_all.tar.gz"

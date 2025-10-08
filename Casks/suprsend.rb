@@ -3,7 +3,7 @@ cask "suprsend" do
   name "suprsend"
   desc ""
   homepage "https://github.com/suprsend/homebrew-tap"
-  version "0.2.5"
+  version "0.2.3"
 
   livecheck do
     skip "Auto-generated on release."

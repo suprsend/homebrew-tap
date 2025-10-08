@@ -3,7 +3,7 @@ cask "suprsend" do
   name "suprsend"
   desc ""
   homepage "https://github.com/suprsend/homebrew-tap"
-  version "0.2.3"
+  version "0.2.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,19 +14,19 @@ cask "suprsend" do
   on_macos do
     url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Darwin_all.tar.gz",
         verified: "github.com/suprsend/cli"
-    sha256 "fb8ae39242f0545e09466e1ca7459e0ca866dfaa5dc8ec9c8d80f421979635ee"
+    sha256 "481ac4e85c9c51db81874c9db2bccb7da6960632c3a77207ccc784bde22aec22"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Linux_x86_64.tar.gz",
         verified: "github.com/suprsend/cli"
-      sha256 "cb48e06f1c67b7cd0008b2f3ba550d6f48af5b25b6d470647ccfad87dd77f623"
+      sha256 "df64b31df5a11651b867cedd899322fb199bdbeb08427c76d756a85683eb3159"
     end
     on_arm do
       url "https://github.com/suprsend/cli/releases/download/#{version}/suprsend_Linux_arm64.tar.gz",
         verified: "github.com/suprsend/cli"
-      sha256 "a6471de323acb89f163dd76d084f7368117f24ad9d0c41bd61e382331eb7772d"
+      sha256 "3882cd1c2cfa849cf9a544947a41c39e48fb30ee52a6f910bb1735ab4db4e05b"
     end
   end
 
